@@ -1,7 +1,7 @@
 @import "font.css";
 
 body {
-    background-color: #F1F1F1;
+    background-color: #F0F0F9;
 }
 
 /*-----------------MENUBAR START-------------------------*/
@@ -170,6 +170,13 @@ body {
     background-color: rgba(57, 56, 56, 0.6);
 }
 
+.last_news{
+    align-items: center;
+    background-color: white;
+    padding: 0 2px;
+    box-shadow: 1px 2px 5px gray;
+}
+
 .last_news img {
     width: 95px;
     height: 95px;
@@ -232,13 +239,14 @@ body {
 
 .main .last_news_block {
     padding: 3px;
-    border: 1px solid greenyellow;
+    /*border: 1px solid greenyellow;*/
     background-color: white;
     transition: 0.5s;
+    box-shadow: 2px 2px 5px gray;
 }
 .main .last_news_block:hover{
-    box-shadow: 2px 2px 5px gray;
-    border: 1px solid red;
+
+    /*border: 1px solid red;*/
 }
 
 
@@ -248,4 +256,12 @@ body {
 }
 
 /*-----------------MAIN END-------------------------*/
+
+
+/*-----------------FOOTER START-------------------------*/
+
+.footer{
+    background-color: #005cbf;
+}
+/*-----------------FOOTER END-------------------------*/
 
