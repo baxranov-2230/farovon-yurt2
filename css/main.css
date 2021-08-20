@@ -1,32 +1,33 @@
 @import "font.css";
 
-body{
+body {
     background-color: #F1F1F1;
 }
 
 /*-----------------MENUBAR START-------------------------*/
 
-.menubar{
+.menubar {
     padding: 5px 0;
     box-shadow: 2px 2px 5px gray;
 }
 
-.menubar .logo img{
+.menubar .logo img {
     width: 40px;
 }
-.menubar .logo h4{
+
+.menubar .logo h4 {
     line-height: 40px;
     font-family: 'MuseoSansCryl';
 }
 
-.menubar ul li{
+.menubar ul li {
     display: inline-block;
     padding: 5px 0;
     position: relative;
     margin: 0 10px;
 }
 
-.menubar ul li::before{
+.menubar ul li::before {
     position: absolute;
     width: 100%;
     height: 6%;
@@ -37,7 +38,8 @@ body{
     transform: scale(0);
     transition: 0.5s;
 }
-.menubar ul li::after{
+
+.menubar ul li::after {
     position: absolute;
     width: 100%;
     height: 6%;
@@ -49,14 +51,15 @@ body{
     transition: 0.5s;
 }
 
-.menubar ul li:hover::before{
-    transform: scale(1);
-}
-.menubar ul li:hover::after{
+.menubar ul li:hover::before {
     transform: scale(1);
 }
 
-.menubar ul li a{
+.menubar ul li:hover::after {
+    transform: scale(1);
+}
+
+.menubar ul li a {
     text-decoration: none;
     color: black;
     font-size: 18px;
@@ -73,64 +76,91 @@ body{
     object-fit: cover;
 }
 
-.carousel_slider{
-    width: 730px;
-    height: 460px;
+.carousel_block {
     overflow: hidden;
 }
-.carousel_news{
+
+.carousel_slider {
+    transition: 0.5s;
+    width: 730px;
+    height: 460px;
+}
+
+.carousel_news {
     /*width: 730px;*/
     /*height: 460px;*/
     position: relative;
 }
 
 @media (max-width: 480px) {
+    .carousel_news img {
+        width: 300px;
+        height: 400px;
+        /*object-fit: cover;*/
+    }
 
+    .carousel_slider {
+        width: 300px;
+        height: 400px;
+    }
+
+    .carousel_block {
+        width: 300px;
+        height: 400px;
+    }
 }
 
-.carousel_news h5{
+.carousel_news h5 {
     position: absolute;
     bottom: 0;
-    background-color: rgba(128, 128, 128, 0.44);
+    background-color: rgba(57, 56, 56, 0.6);
 }
 
-.last_news img{
+.last_news img {
     width: 95px;
     height: 95px;
     object-fit: cover;
 }
-.last_news p{
+
+.last_news p {
     font-size: 15px;
 }
-.import{
+
+.import {
     border-bottom: 2px solid greenyellow;
 }
-.carousel_block{
+
+.carousel_block {
     position: relative;
 }
-.btn_block{
+
+.btn_block {
     top: 10px;
     right: 10px;
     padding: 5px;
     position: absolute;
     background-color: rgba(128, 128, 128, 0.5);
 }
-.btn_block button{
+
+.btn_block button {
     margin: 1px;
     background-color: transparent;
     border: 1px solid white;
 
 }
-.btn_block button:focus{
+
+.btn_block button:focus {
     outline: none;
     border: 1px solid greenyellow;
 }
-.btn_block button:focus i{
-   color: greenyellow;
+
+.btn_block button:focus i {
+    color: greenyellow;
 }
 
-.btn_block button i{
+.btn_block button i {
     font-size: 25px;
     color: white;
 }
+
 /*-----------------CAROUSEL END-------------------------*/
