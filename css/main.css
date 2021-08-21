@@ -7,8 +7,12 @@ body {
 /*-----------------MENUBAR START-------------------------*/
 
 .menubar {
+    top: 0;
+    position: sticky;
+    z-index: 999999;
     padding: 5px 0;
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 0 5px 10px #6f6f6f;
+    background-color: #1A133C;
 }
 
 .menubar .logo img {
@@ -26,7 +30,20 @@ body {
     position: relative;
     margin: 0 10px;
 }
+.sub_menu{
+    display: none;
+    background-color: #1A133C;
+    padding-top: 20px;
+}
+.sub_menu ul{
+    padding: 0;
+    margin: 0;
+}
+.menubar ul li:hover .sub_menu{
+    display: block;
+    position: absolute;
 
+}
 .menubar ul li::before {
     position: absolute;
     width: 100%;
@@ -61,13 +78,14 @@ body {
 
 .menubar ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 18px;
     font-family: 'MuseoSansCryl';
     /*text-transform: uppercase;*/
 }
 
 /*-----------------MENUBAR END-------------------------*/
+
 /*-----------------CAROUSEL START-------------------------*/
 
 .carousel_news img {
@@ -261,7 +279,54 @@ body {
 /*-----------------FOOTER START-------------------------*/
 
 .footer{
-    background-color: #005cbf;
+    background-color: #1A133C;
+}
+.footer .contact i{
+    font-size: 20px;
+    margin-top: 4px;
+    margin-left: 2px;
+    transition: 0.3s;
+}
+
+.footer .phone{
+    margin-right: 10px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+.footer .phone:hover{
+  background-color: white;
+}
+
+.footer .social{
+    margin-right: 10px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+.footer .social:hover{
+    background-color: white;
+}
+.footer .social:hover .fa-youtube{
+    color: #FF0000;
+    transform: rotate(360deg);
+}
+.footer .social:hover .fa-telegram-plane{
+    color: #28A7E8;
+    transform: rotate(360deg);
+}
+
+.footer .social:hover .fa-facebook-f{
+    color: #4064AC;
+    transform: rotate(360deg);
+}
+.footer .social:hover .fa-instagram{
+    color: #DF4674;
+    transform: rotate(360deg);
 }
 /*-----------------FOOTER END-------------------------*/
 
